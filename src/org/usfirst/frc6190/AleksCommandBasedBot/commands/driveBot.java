@@ -42,6 +42,10 @@ public class driveBot extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+    	double turnValue = Robot.oi.logitechJoystick.getRawAxis(1);
+    	double speedValue = Robot.oi.logitechJoystick.getRawAxis(2);
+    	Robot.driveTrain.driveBase.arcadeDrive(speedValue, turnValue);
+    	
     }
 
     // Make this return true when this Command no longer needs to run execute()
