@@ -65,7 +65,7 @@ public class OI {
         // SmartDashboard Buttons
         SmartDashboard.putData("Autonomous Command", new AutonomousCommand());
         SmartDashboard.putData("driveBot", new driveBot());
-        SmartDashboard.putData("turnDegrees: default", new turnDegrees());
+        SmartDashboard.putData("turnDegrees", new turnDegrees(20));
         SmartDashboard.putData("turnAndTeleop", new turnAndTeleop());
         SmartDashboard.putData("receiveUDP", new receiveUDP());
 
