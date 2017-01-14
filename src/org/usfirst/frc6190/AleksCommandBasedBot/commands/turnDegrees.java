@@ -45,7 +45,7 @@ public class turnDegrees extends Command {
 	// Called just before this Command runs the first time
     protected void initialize() {
     	DriveTrain.SPIGyro2.reset();
-        degrees = 20;
+        degrees = Robot.uDP.inputValue;
         end = false;
     }
 
